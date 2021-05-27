@@ -7,10 +7,15 @@ import "./css/App.css";
 
 function App() {
   return (
+    <>
+    <header>
+    ¿Qué pasa? Restuesta: Ese Header permanece en ambas URL.
+    </header>
     <BrowserRouter>
       <Route path="/" exact component={Hola} />
       <Route path="/wiki" component={Adios} />
     </BrowserRouter>
+    </>
   );
 }
 
