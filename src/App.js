@@ -3,14 +3,14 @@ import { BrowserRouter, Route } from "react-router-dom";
 
 import Hola from "./Hola";
 import Adios from "./Adios";
+import Header from "./Header";
 import "./css/App.css";
 
 function App() {
   return (
     <>
-    <header>
-    ¿Qué pasa? Restuesta: Ese Header permanece en ambas URL.
-    </header>
+    <Header>
+    </Header>
     <BrowserRouter>
       <Route path="/" exact component={Hola} />
       <Route path="/wiki" component={Adios} />
